@@ -1,6 +1,6 @@
 # codm_animation
 
-A new Flutter project.
+call of duty mobile loading animation with flutter 
 
 ## Getting Started
 
