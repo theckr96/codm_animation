@@ -98,15 +98,14 @@ class FirstCanvas extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint myArc = Paint()
-      ..color = Color(0xFF677068)
+      ..color = Color(0xFF6E6A3B)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 3
+      ..strokeWidth = 2
       ..strokeCap = StrokeCap.round;
-    //Rect rect1 = new Rect.fromLTWH(0.0, 0.0, size.width, size.height);
-    Rect rect1 = Rect.fromLTRB(size.width * .07, size.height * .07,
-        size.width * .93, size.height * .93);
-    canvas.drawArc(rect1, .25 * pi, -pi * .25, false, myArc);
-    canvas.drawArc(rect1, pi, pi * .25, false, myArc);
+    // Rect rect1 = Rect.fromLTRB(        size.width * .1, size.height * .1, size.width * .9, size.height * .9);
+    Rect rect1 = new Rect.fromLTWH(0.0, 0.0, size.width, size.height);
+    canvas.drawArc(rect1, 0, pi * .5, false, myArc);
+    canvas.drawArc(rect1, pi, pi * .5, false, myArc);
   }
 
   @override
@@ -119,14 +118,15 @@ class SecondCanvas extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     Paint myArc = Paint()
-      ..color = Color(0xFF6E6A3B)
+      ..color = Color(0xFF677068)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 2
+      ..strokeWidth = 3
       ..strokeCap = StrokeCap.round;
-    // Rect rect1 = Rect.fromLTRB(        size.width * .1, size.height * .1, size.width * .9, size.height * .9);
-    Rect rect1 = new Rect.fromLTWH(0.0, 0.0, size.width, size.height);
-    canvas.drawArc(rect1, 0, pi * .5, false, myArc);
-    canvas.drawArc(rect1, pi, pi * .5, false, myArc);
+    //Rect rect1 = new Rect.fromLTWH(0.0, 0.0, size.width, size.height);
+    Rect rect1 = Rect.fromLTRB(size.width * .07, size.height * .07,
+        size.width * .93, size.height * .93);
+    canvas.drawArc(rect1, .25 * pi, -pi * .25, false, myArc);
+    canvas.drawArc(rect1, pi, pi * .25, false, myArc);
   }
 
   @override
